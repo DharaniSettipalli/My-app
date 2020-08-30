@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Form for courses</title>
-	<style type="text/css">
+	<meta charset="UTF-8">
+	<style>
 		label{
 			color:white;
 		}
 
 	</style>
-	<script type="text/javascript">
+	<script>
 		function passvalue() {
 			var fname=document.getElementById("fname").value;
 			var lname=document.getElementById("lname").value;
@@ -57,21 +58,21 @@
 	</script>
 
 </head>
-<body style=" background-image: url(https://images.unsplash.com/photo-1417577097439-425fb7dec05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80); background-repeat: ;background-size: 100%" >
+<body style=" background-image: url(https://images.unsplash.com/photo-1417577097439-425fb7dec05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);background-size: 100%" >
 	<div style="margin-left: 25%;  padding:5%; margin-right:30%; margin-top: 15%;margin-bottom: 10%;  border-style:outset;border-width: 5px;border-color: black; background:black; box-shadow:1px 1px 2px 4px #888888; ">
-		<h1 style="color:blue;text-align: center;text-shadow: 5px;text-shadow: 1px 1px white;">Register</h1>
+		<h1 style="color:blue;text-align: center;text-shadow: 1px 1px white;">Register</h1>
 		<form style="margin-left: 5%;" action="display.html" id="a">
 			<label for="fname">First Name:<br></label>
-			<input type="text" name="" id="fname">
+			<input type="text" id="fname">
 			<br><br>
 			<label for="lname">Last Name:<br></label>			
-			<input type="text" name="" id="lname">
+			<input type="text" id="lname">
 			<br><br>
 			<label for="mail">Email:<br></label>
-			<input type="email" name="" id="mail">
+			<input type="email" id="mail">
 			<br><br>
 			<label for="phone">Phone:<br></label>
-			<input type="text" name="" id="phone">
+			<input type="text" id="phone">
 			<br><br>
 			<label>Course:</label>
 				<label for="sel1">Bachelor
@@ -82,22 +83,22 @@
 			</label>
 			<br><br>
 			<label for="description">Description:<br></label>
-			<textarea rows = "5" cols = "50" name = "" id="description">enter your course description here
+			<textarea rows = "5" cols = "50" id="description">enter your course description here
          </textarea>
 			<br><br>
 			<label>Subject interests(courses you want to register):<br></label><br>
-			  <label for="python">Python:<input type="checkbox" name="" id="python" value="Python"></label><br>
-			  <label for="wt">Web development:<input type="checkbox" name="" id="wt" value="Webtechnology"></label><br>
-			  <label for="gt">Game development:<input type="checkbox" name="" id="gt" value="Game development"></label><br>
-			  <label for="ml">Machine learning:<input type="checkbox" name="" id="ml" value="Machine learning"></label><br>
-			  <label for="ai">Artificial ntelligence:<input type="checkbox" name="" id="ai" value="Artificial intelligence"></label>
+			  <label for="python">Python:<input type="checkbox" id="python" value="Python"></label><br>
+			  <label for="wt">Web development:<input type="checkbox" id="wt" value="Webtechnology"></label><br>
+			  <label for="gt">Game development:<input type="checkbox"  id="gt" value="Game development"></label><br>
+			  <label for="ml">Machine learning:<input type="checkbox"  id="ml" value="Machine learning"></label><br>
+			  <label for="ai">Artificial ntelligence:<input type="checkbox" id="ai" value="Artificial intelligence"></label>
 			<br><br>
 
 			<label>Password:<br></label>
-			<input type="password" name="">
+			<input type="password" >
 			<br><br>
 			<label>Confirm Password:<br></label>
-			<input type="password" name="">
+			<input type="password">
 			<br><br>
 
 			<input type="submit" style="margin-left: 36%;" id="button" onclick="passvalue()">
