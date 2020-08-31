@@ -1,0 +1,11 @@
+body{
+	background: black;
+}
+h1{
+	color:#FF69B4;
+	text-shadow: 2px 2px silver;
+}
+p{
+	color:white;
+	border: 2px solid violet;
+}
