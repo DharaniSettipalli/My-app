@@ -4,11 +4,16 @@
 	<title>JS2</title>
 </head>
 <body>
+<h1>Dharani Settipalli999</h1>
 <script type="text/javascript">
 	function summation(a,b) {
 		return (a*b)		
 	}
 	document.write(summation(3,2));
+	var h1=document.querySelector("h1").innerText;
+	var patt=/[a-zA-Z]/g;
+	var result=h1.match(patt);
+	document.write(" alphabets in h1: "+result);
 </script>
 </body>
 </html>
