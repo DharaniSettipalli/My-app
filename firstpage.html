@@ -28,23 +28,29 @@
   </tr>
   <tr>
     <td style="text-align: left">CN</td>
-    <td style="text-align: right;">75</td>
+    <td style="text-align: right;" class="marks"><span>75</span></td>
   </tr>
   <tr>
     <td style="text-align: left">DAA</td>
-    <td style="text-align: right";>80</td>
+    <td style="text-align: right" class="marks"><span>80</span></td>
   </tr>
   <tr>
     <td style="text-align: left">OOAD</td>
-    <td style="text-align: right;">82</td>
+    <td style="text-align: right;" class="marks"><span>82</span></td>
   </tr>
   <tr>
     <td style="text-align: left">UML</td>
-    <td style="text-align: right";>85</td>
+    <td style="text-align: right" class="marks"><span>85</span></td>
   </tr>
   <tr>
     <td style="text-align: left">DWDM</td>
-    <td style="text-align: right;">85</td>
+    <td style="text-align: right;" class="marks"><span>85</span></td>
+  </tr>
+  <tr id="sum1">
+    
+  </tr>
+  <tr id="sum2">
+    
   </tr>
 </table>
 </div>
@@ -54,5 +60,22 @@
 	<h1 style="text-shadow: 2px 0.5px white;">HTML page Structure</h1>
 	<img style="border: 2.5px solid black;padding: 0.18%; margin-left: 25%;" src="https://i1.wp.com/qatechhub.com/wp-content/uploads/2016/09/BasicHtmlStructure.png?resize=540%2C360">
 </div>
+
+<script type="text/javascript">
+  var l=document.querySelectorAll(".marks span");
+  var s=0;
+  for(i=0;i<l.length;i++){
+    var m=l[i].innerHTML;
+    var n=Number(m);
+    s+=n;
+  } 
+  var avg=s/l.length;
+  var l1=document.querySelector("#sum1");
+  var l2=document.querySelector("#sum2");
+  l1.innerHTML="<td> total marks </td> <td style='text-align:right'>"+s+"</td>";
+  l2.innerHTML="<td> average of marks </td> <td style='text-align:right'>"+avg+"</td>";
+  /*document.write("sum of marks:"+s+" ");
+  document.write("average of marks:"+avg);*/
+</script> 
 </body>
 </html>
