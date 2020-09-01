@@ -6,8 +6,20 @@
 <body>
 <h1>JavaScript</h1>
 <p>JavaScript is used to add actions to the web page.It is an Object oriented programming language commonly used to create interactive effects within web browsers.It's an interpreted language and doesn't need any compilation.It is commonly found embedded in HTML pages.It was developed by Brendon Eich (co-founder of Mozilla project).With Js, we'll able to develop games,animated 2D and 3D graphics,comprehensive database driven apps and much more.</p>
+<p id="demo"></p>
+<p class="s1"></p>
+<button onclick="window.print()">Print this page</button>
+
 </body>
-<script type="text/javascript" >
+<script type="text/javascript">
+	    var e1,e2;
+	    e1=e2=1;
+	    console.log(e1,e2);
 		document.querySelector("h1").textContent="Hello world, let's learn javascript";
+		document.querySelector("#demo").textContent="I'm second paragraph.";
+		document.querySelector(".s1").innerHTML="<h1>I'm third paragraph</h1>";
+		document.write("Have you seen something");
+		window.alert("press ok");
+		console.log("successfully completed the task");
 	</script>
 </html>
