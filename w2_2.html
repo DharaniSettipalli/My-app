@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Events</title>
+	<script>
+		function today_date() {
+		  document.getElementById("demo").innerHTML = Date();
+		}
+		function change_to_green(){
+			var h1=document.querySelector("h1");
+			h1.style.color="green";
+		}
+		function change_to_purple(){
+			var h2=document.querySelector("h2");
+			h2.style.color="purple";
+		}
+		function image(){
+			alert("Page loaded");
+			/*var span=document.querySelector("div");
+			span.innerHTML="Hello";*/
+}
+</script>
+</head>
+<body onload="image()">
+<h1 onclick="change_to_green()">HTML Events</h1>
+<h2 onmouseenter="document.querySelector('h2').style.color='green'" onmouseout="change_to_purple() ">Mouse enter and leave events</h2>
+<button onclick="today_date()">The Date is?</button>
+
+
+
+
+<p id="demo"></p>
+
+</body>
+</html>
