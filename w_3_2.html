@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display and hide</title>
+	<script src="https://code.jquery.com/jquery-3.5.0.js">
+	</script>
+	<script type="text/javascript">
+		function Hide_ele() {
+			document.querySelector("p").style.display="none";
+
+		}
+		function dis_ele() {
+			document.querySelector("p").style.display="block";
+
+		}
+	</script>
+</head>
+<body>
+<p>Hello</p>
+<button onclick="Hide_ele()">Hide Hello</button>
+<button onclick="dis_ele()">Dispaly Hello</button>
+<div id="clickme">
+  Click here
+</div>
+<img src="https://tse2.mm.bing.net/th?id=OIP.D120kIX9eJeaHZERlyXzEAHaLG&pid=Api&P=0&w=300&h=300" id="flower">
+<!--  -->
+<script type="text/javascript">
+	$( "#clickme" ).click(function() {
+  $( "#flower" ).hide( "slow", function() {
+    alert( "Animation complete." );
+  });
+});
+</script>
+</body>
+</html>
