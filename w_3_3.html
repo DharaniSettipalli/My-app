@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>  
+<head> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <!-- <style type="text/css">
+        .none{
+            display:none;
+        }
+    </style> -->
+ </head> 
+<body> 
+  
+    <img src="https://tse1.mm.bing.net/th?id=OIP.L8ke9hUF05zCCNDiauGsIgHaHa&pid=Api&P=0&w=300&h=300"> 
+    <br>
+    <button class="button1 btn btn-warning" style="margin-top: 3%;">Click to hide and show the image</button><br>
+    <h1>Double click me</h1> 
+    <h2>Click me to Fade out</h2>
+    <button class="button2">Click me to Fade in</button>
+    <script> 
+       $(".button1").click(function(){
+           $("img").toggle(1800);
+       });
+       $("h1").dblclick(function(){
+           $("h1").toggle(1800);
+       });
+       $("h2").click(function(){
+         $("h2").fadeOut(100)
+         });
+       $(".button2").click(function(){
+        $("h2").fadeIn("fast");
+       })
+        /* $(".none").style.display="block";
+         $(".none").fadeIn("slow");*/
+    </script> 
+  
+</body> 
+  
+</html> 
